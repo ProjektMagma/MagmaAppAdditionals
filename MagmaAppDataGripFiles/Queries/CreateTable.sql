@@ -73,7 +73,7 @@ create table if not exists LessonHours
 create table if not exists StudentAttendance
 (
     school_plan_id     integer not null,
-    student_pesel      text    not null,
+    student_pesel_id   text    not null,
     attendance_type_id integer
 );
 
@@ -83,3 +83,32 @@ create table if not exists AttendanceTypes
     name               text not null
 );
 
+create table if not exists Messages
+(
+    message_id        integer primary key autoincrement,
+    sender_pesel_id   text not null,
+    receiver_pesel_id text not null,
+    send_date         text not null,
+    title             text not null,
+    content           text
+);
+
+create table if not exists Notes
+(
+    note_id       integer primary key autoincrement,
+    pesel_id      text not null,
+    creation_date text not null,
+    title         text not null,
+    content       text
+);
+
+create table if not exists Marks
+(
+    mark_id          integer primary key autoincrement,
+    subject_id       integer not null,
+    student_pesel_id text    not null,
+    mark             integer not null,
+    mark_weight      integer not null,
+    mark_date        text    not null,
+    mark_description text
+);
