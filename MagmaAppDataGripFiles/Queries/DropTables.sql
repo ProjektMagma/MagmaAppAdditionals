@@ -1,0 +1,14 @@
+drop table if exists AttendanceTypes;
+drop table if exists Classes;
+drop table if exists Groups;
+drop table if exists LessonHours;
+drop table if exists Marks;
+drop table if exists Messages;
+drop table if exists Notes;
+drop table if exists Qualifications;
+drop table if exists SchoolPlan;
+drop table if exists StudentAttendance;
+drop table if exists SubjectNames;
+drop table if exists Subjects;
+drop table if exists UserRoles;
+drop table if exists Users;

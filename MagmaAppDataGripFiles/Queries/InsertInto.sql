@@ -76,6 +76,7 @@ values ('Nauczyciele'),
 insert into Groups (class_id, qualification_id, group_sign)
 values (1, 1, 'Administrator'),
        (1, 1, 'Nauczyciele'),
+       (1, 1, 'Rodzice'),
        (2, 2, '1/2'),
        (2, 2, '2/2'),
        (3, 3, '1/2'),
@@ -97,5 +98,5 @@ values (1, 1, 'Administrator'),
        (11, 4, '1/2'),
        (11, 4, '2/2');
 
-insert into Users (pesel_id, first_name, second_name, role_id, group_id)
+insert into Users (pesel, first_name, second_name, role_id, group_id)
 values ('12345678901', 'Admin', 'Admin', 5, 1);
