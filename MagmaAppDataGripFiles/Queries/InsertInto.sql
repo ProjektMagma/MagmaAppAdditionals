@@ -60,18 +60,18 @@ values ('Obecny'),
        ('Zwolniony'),
        ('Zwolniony z przyczyn szkolnych');
 
-insert into Classes(name) -- Bez wychowawców na razie
-values ('Nauczyciele'),
-       ('1A'),
-       ('1B'),
-       ('1C'),
-       ('1D'),
-       ('1E'),
-       ('2A'),
-       ('2B'),
-       ('2C'),
-       ('2D'),
-       ('2E');
+insert into Classes(name, supervising_teacher_id)
+values ('Nauczyciele', 1),
+       ('1A', 1),
+       ('1B', 1),
+       ('1C', 1),
+       ('1D', 1),
+       ('1E', 1),
+       ('2A', 1),
+       ('2B', 1),
+       ('2C', 1),
+       ('2D', 1),
+       ('2E', 1);
 
 insert into Groups (class_id, qualification_id, group_sign)
 values (1, 1, 'Administrator'),
